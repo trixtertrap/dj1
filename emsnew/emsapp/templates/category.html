@@ -1,0 +1,25 @@
+{% extends "employee.html" %}
+
+{% block employee %}
+    <div class="row">
+    <div class="col-md-2">
+        <h2>Query</h2>
+    </div>
+    <div class="col-md-2">
+        <h2>Answer</h2>
+    </div>
+    </div>
+
+    <div class="row">
+    <div class="col-md-2">
+        <h4>{{ answer.query }}</h4>
+    </div>
+    <div class="col-md-2">
+        <input type ="text" class ="form-control" placeholder="answer.." name="answertxt">
+    </div>
+    </div>
+    <div class="row">
+    <input type="submit" class="btn btn-info" value="Answer">
+    </div>
+
+{% endblock %}

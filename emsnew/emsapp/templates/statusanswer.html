@@ -1,0 +1,20 @@
+{% extends "knowstatus.html" %}
+{% block content %}
+    {% block customer %}
+        <div class="row">
+        <h2>The answer for your query "{{ answer.query }}" is:</h2>
+
+        <h3>{{ answer.answer }}</h3>
+        </div>
+
+        <div class="row"></div>
+        <div class="row"></div>
+        <div class="row">
+        </div>
+        <div class="row"></div>
+        <div class="row">
+        **if the answer is none, your query is not answered yet
+        </div>
+
+        {% endblock %}
+{% endblock %}

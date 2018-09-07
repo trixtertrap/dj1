@@ -1,0 +1,18 @@
+{% extends "employee.html" %}
+{% block content %}
+{% block employee %}
+
+    **edit the answer area in the page and hit save...!<br>
+        **click the view site link in the top right after saving!
+
+
+    <h2>Questions</h2>
+    {% for items in items %}
+        <div class="row">
+            <h3>{{ items.id }}:<a href="http://127.0.0.1:8000/admin/emsapp/query/{{ items.id }}/change/">{{ items.query }}</a></h3>
+        </div>
+    {% endfor %}
+
+
+{% endblock %}
+{% endblock %}

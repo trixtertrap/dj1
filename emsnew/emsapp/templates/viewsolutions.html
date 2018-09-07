@@ -1,0 +1,52 @@
+{% extends "customer.html" %}
+
+{% block customer %}
+
+
+    <div class="row">
+    <div class="col-md-2">
+            ----------<b>Name</b>-------
+    </div>
+    <div class="col-md-2">
+            ----------<b>Query</b>-------
+    </div>
+
+    <div class="col-md-8">
+        ----------<b>Answer</b>--------
+    </div>
+
+    </div>
+
+
+
+    <div class="col-md-2">
+
+    {% for items in sol%}
+
+        {{ items.name }}<br>
+
+    {% endfor %}
+
+    </div>
+
+
+    <div class="col-md-2">
+
+    {% for items in sol%}
+
+        {{ items.query }}<br>
+
+    {% endfor %}
+
+    </div>
+
+    <div class="col-md-8">
+
+    {% for items in sol %}
+        {{ items.answer }}<br>
+    {% endfor %}
+
+    </div>
+
+
+{% endblock %}

@@ -1,0 +1,21 @@
+{% extends "adminlog.html" %}
+
+{% block content %}
+    {% block admin %}
+
+        <h2>Login Success!</h2>
+
+        **edit the answer area in the page and hit save...!<br>
+        **click view site after hitting save!
+        <br><br><br>
+
+    <h3>Suggestions</h3>
+    {% for items in items %}
+        <div class="row">
+            <h4><a href="http://127.0.0.1:8000/admin/emsapp/contact/{{ items.id }}/change/">{{ items.suggestion }}</a></h4>
+        </div>
+    {% endfor %}
+
+        {% endblock %}
+
+{% endblock %}

@@ -1,0 +1,36 @@
+{% extends "customer.html" %}
+
+{% block customer %}
+
+    <div style = "padding: 100px 100px 10px;">
+
+   <form class = "bs-example bs-example-form" role = "form" method="post">
+       {% csrf_token %}
+      <div class = "input-group">
+         <span class = "input-group-addon">Name</span>
+         <input type = "text" class = "form-control" placeholder = "your name.." name="nametxt">
+      </div>
+
+        <br>
+      <div class = "input-group">
+         <span class = "input-group-addon">E-Mail</span>
+         <input type = "text" class = "form-control" placeholder = "your email.." name="emailtxt">
+      </div>
+
+      <br>
+
+      <div class = "input-group">
+          <span class = "input-group-addon">Query</span>
+         <input type = "text" class = "form-control" placeholder="your query.." rows=5 name="querytxt">
+
+      </div>
+
+      <br>
+
+
+       <input type="submit" class="btn btn-info" value="Post">
+
+   </form>
+
+</div>
+{% endblock %}

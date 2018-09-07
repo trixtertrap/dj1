@@ -1,0 +1,34 @@
+{% extends "master.html" %}
+
+{% block content %}
+
+    <div class="row">
+
+    <div class="col-md-4">
+        <h2>Question</h2>
+    </div>
+
+    <div class="col-md-6">
+        <h2>Answer</h2>
+    </div>
+    </div>
+    {% for items in item %}
+
+    <div class="row">
+    <div class="col-md-4">
+    {% for items in item %}
+        {{ items.query }}<br><hr>
+    {% endfor %}
+    </div>
+
+    <div class="col-md-6">
+           {{ items.answer }}<br><hr>
+    </div>
+
+
+
+    </div>
+               {% endfor %}
+
+
+{% endblock %}

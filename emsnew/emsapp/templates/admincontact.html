@@ -1,0 +1,25 @@
+{% extends "adminlog.html" %}
+
+{% block content %}
+    {% block admin %}
+
+        <select name="dropdown">
+
+        <div class="row">
+        <option selected="selected">Select your name:</option>
+
+        {% for items in item %}
+            <option name="name" class="form">{{ items.name }}</option>
+        {% endfor %}
+
+        </select>
+
+        <input type="submit" class="btn btn-info" value="Check">
+
+        </div>
+
+    {% endblock %}
+
+
+
+{% endblock %}

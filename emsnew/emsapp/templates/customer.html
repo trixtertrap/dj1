@@ -1,0 +1,46 @@
+{% extends "master.html" %}
+
+{% block content %}
+<h1>Customer</h1>
+   {% block customer %}
+       {% load static %}
+       <div class="row">
+
+       <div class="col-md-1">
+        <img src="{% static "postquery.jpg" %}" height="100" width="100">
+       </div>
+       <div class="col-md-11">
+           <a href="/postquery"><h1>Post a query</h1></a><br><br>
+       </div>
+       </div>
+        <div class="row">
+
+       <div class="col-md-1">
+        <img src="{% static "knowstatus.jpg" %}" height="80" width="80">
+       </div>
+       <div class="col-md-1"></div>
+       <div class="col-md-10">
+       </div>
+            <a href="/knowstatus"><h1>Know Status</h1></a><br><br>
+
+       </div>
+
+       <div class="row">
+
+       <div class="col-md-1">
+        <img src="{% static "viewsolutions1.jpg" %}" height="80" width="80">
+       </div>
+       <div class="col-md-1"></div>
+       <div class="col-md-10">
+       </div>
+           <a href="/viewsolutionslogin"><h1>View Solutions</h1></a>
+
+       </div>
+
+
+
+   {% endblock %}
+
+
+{% endblock %}
+

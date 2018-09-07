@@ -1,0 +1,41 @@
+{% extends "master.html" %}
+
+{% block content %}
+<h1>Contact</h1>
+    {% block contact %}
+    <div style = "padding: 100px 100px 10px;">
+
+   <form class = "bs-example bs-example-form" role = "form" method="post">
+       {% csrf_token %}
+      <div class = "input-group">
+         <span class = "input-group-addon">Name</span>
+         <input type = "text" class = "form-control" placeholder = "your name.." name="nametxt">
+      </div>
+
+      <br>
+
+      <div class = "input-group">
+          <span class = "input-group-addon">E-Mail</span>
+         <input type = "text" class = "form-control" placeholder="email.." name="emailtxt">
+
+      </div>
+
+      <br>
+
+      <div class = "input-group">
+         <span class = "input-group-addon">Phone</span>
+         <input type ="text" class ="form-control" placeholder="phone.." name="phonetxt">
+      </div>
+        <br>
+       <div class = "input-group">
+         <span class = "input-group-addon">Suggestions?</span>
+         <input type ="text" class ="form-control" placeholder="your suggestions.." name="suggesttxt">
+      </div>
+        <br>
+       <input type="submit" class="btn btn-info" value="Submit">
+
+   </form>
+
+</div>
+{% endblock %}
+{% endblock %}
